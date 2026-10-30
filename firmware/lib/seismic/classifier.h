@@ -1,7 +1,7 @@
 // Explainable threshold classifier. Every decision carries the rule that fired.
 #pragma once
 #include <cstdint>
-#include "features.h"
+#include "seismic_features.h"
 
 namespace seismic {
 

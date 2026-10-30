@@ -57,7 +57,7 @@ make flash
 | Path | Language | Purpose |
 |---|---|---|
 | `firmware/lib/seismic/fft.h` | C++17 | Radix-2 FFT (1024 points) |
-| `firmware/lib/seismic/features.h` | C++17 | 1 kHz × 1024 window → RMS, 3 band fractions (2-20, 20-60, 60-200 Hz), kurtosis, **footstep cadence** (envelope autocorrelation over about 4 s, 1.4-2.6 steps/s) |
+| `firmware/lib/seismic/seismic_features.h` | C++17 | 1 kHz × 1024 window → RMS, 3 band fractions (2-20, 20-60, 60-200 Hz), kurtosis, **footstep cadence** (envelope autocorrelation over about 4 s, 1.4-2.6 steps/s) |
 | `firmware/lib/seismic/classifier.h` | C++17 | Explainable rules: every decision carries the rule that fired. Vehicles need sustained low-band energy across windows |
 | `firmware/lib/seismic/sha256.h` | C++17 | SHA-256 and HMAC-SHA256 (RFC 4231 verified) |
 | `firmware/lib/seismic/mesh.h` | C++17 | 29-byte packet, truncated HMAC tag (relays can decrement hops without breaking it), flooding with (src, seq) dedup, store-and-forward ring for gateway outages (T6) |
