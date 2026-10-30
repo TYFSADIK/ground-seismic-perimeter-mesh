@@ -1,0 +1,1 @@
+# gateway is stdlib; serial capture: pyserial>=3.5
